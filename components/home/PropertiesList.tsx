@@ -4,7 +4,7 @@ import PropertyCard from "../card/PropertyCard";
 function PropertiesList({ properties }: { properties: PropertyCardProps[] }) {
   return (
     <section>
-      {properties.map((property) => {
+      {properties.map(( property) => {
         return <PropertyCard key={property.id} property={property} />;
       })}
     </section>
